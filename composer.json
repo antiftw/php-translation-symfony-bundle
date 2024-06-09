@@ -11,7 +11,6 @@
     ],
     "require": {
         "php": "^8.0",
-        "symfony/framework-bundle": "^5.3 || ^6.0",
         "symfony/validator": "^5.3 || ^6.0",
         "symfony/translation": "^5.3 || ^6.0",
         "symfony/twig-bundle": "^5.3 || ^6.0",
@@ -20,7 +19,7 @@
         "symfony/console": "^5.3 || ^6.0",
 
         "php-translation/symfony-storage": "^2.1",
-        "php-translation/extractor": "^2.0",
+        "php-translation/extractor": "dev-master",
         "nyholm/nsa": "^1.1",
         "twig/twig": "^2.14.4 || ^3.3",
         "symfony/asset": "^5.3 || ^6.0"
@@ -65,5 +64,11 @@
             "bamarni/composer-bin-plugin": true,
             "php-http/discovery": true
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/antiftw/php-translation-extractor"
+        }
+    ]
 }
